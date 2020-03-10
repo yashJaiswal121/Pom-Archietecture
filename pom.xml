@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yash.www</groupId>
+  <artifactId>developerPortfolio</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>developerPortfolio</name>
+  <!-- PARENT POM -->
+  <packaging>pom</packaging>
+  
+  <!--CUSTOM  MODULES -->
+  
+  	<modules>
+    	<module>developerPortfolio-entities</module>
+    	<module>developerPortfolio-dtos</module>
+    	<module>developerPortfolio-rest-services</module>
+  	</modules>
+  
+  
+  	<dependencies>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/javax.ejb/javax.ejb-api[For Ejb] -->
+		<dependency>
+		    <groupId>javax.ejb</groupId>
+		    <artifactId>javax.ejb-api</artifactId>
+		    <version>3.2</version>
+		</dependency>    
+    </dependencies>
+</project>
