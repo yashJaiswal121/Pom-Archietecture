@@ -1,14 +1,14 @@
 package services;
 
-import daos.SignupDaoImpl;
+import daoInterfaces.BasicDao;
 import entities.User;
 import servicesInterfaces.LoginService;
 
 public class LoginServiceImpl extends BasicServiceImpl<User> implements LoginService {
 
 	@Override
-	public SignupDaoImpl getDao() {
-		// TODO Auto-generated method stub
+	public BasicDao getDao() {
+		// TODO Will have to return LoginDao instance here...
 		return null;
 	}
 
