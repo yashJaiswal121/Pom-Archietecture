@@ -13,7 +13,8 @@
     	<module>developerPortfolio-entities</module>
     	<module>developerPortfolio-dtos</module>
     	<module>developerPortfolio-rest-services</module>
-  	</modules>
+        <module>app-services</module>
+    </modules>
   
   
   	<dependencies>

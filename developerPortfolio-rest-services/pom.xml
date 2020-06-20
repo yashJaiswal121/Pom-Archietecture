@@ -90,7 +90,35 @@
           <artifactId>developerPortfolio-dtos</artifactId>
            <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        
+
+      <dependency>
+          <groupId>com.yash.www</groupId>
+          <artifactId>app-services</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcprov-jdk15on</artifactId>
+          <version>1.49</version>
+      </dependency>
+      <dependency>
+          <groupId>com.auth0</groupId>
+          <artifactId>java-jwt</artifactId>
+          <version>2.2.0</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.onelogin</groupId>
+          <artifactId>java-saml</artifactId>
+          <version>2.2.0</version>
+      </dependency>
+
+      <dependency>
+          <groupId>commons-codec</groupId>
+          <artifactId>commons-codec</artifactId>
+          <version>1.11</version>
+      </dependency>
         
   </dependencies>
   

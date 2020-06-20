@@ -1,7 +1,6 @@
 package services;
 
 import daoInterfaces.BasicDao;
-import daos.SignupDaoImpl;
 import servicesInterfaces.BasicService;
 
 public abstract class BasicServiceImpl<T> implements BasicService<T> {

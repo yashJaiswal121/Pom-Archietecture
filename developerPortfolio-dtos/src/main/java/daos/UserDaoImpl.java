@@ -2,14 +2,13 @@ package daos;
 
 import javax.ejb.Stateless;
 
-import daoInterfaces.SignupDao;
+import daoInterfaces.UserDao;
 import entities.User;
 
-public class SignupDaoImpl extends BasicDaoImpl<User> implements SignupDao {
+public class UserDaoImpl extends BasicDaoImpl<User> implements UserDao {
 
 	public void dmdCheck() {
 		System.out.println("cszdvxdvzdfzf");
 	}
 
-	
 }

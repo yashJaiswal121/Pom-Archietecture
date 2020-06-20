@@ -36,7 +36,10 @@ public class User implements Serializable{
 	
 	@Column(name="email")
 	private String email;
-	
+
+	@Column(name="password")
+	private String password;
+
 	public Integer getUid() {
 		return uid;
 	}
@@ -85,6 +88,15 @@ public class User implements Serializable{
 		this.email = email;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -93,6 +105,7 @@ public class User implements Serializable{
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
 		result = prime * result + ((firstname == null) ? 0 : firstname.hashCode());
 		result = prime * result + ((lastname == null) ? 0 : lastname.hashCode());
+		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		return result;
 	}
 
@@ -125,13 +138,18 @@ public class User implements Serializable{
 				return false;
 		} else if (!lastname.equals(other.lastname))
 			return false;
+		if (password == null) {
+			if (other.password != null)
+				return false;
+		} else if (!password.equals(other.password))
+			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
 		return "User [uid=" + uid + ", firstname=" + firstname + ", lastname=" + lastname + ", dob=" + dob
-				+ ", profilePicture=" + profilePicture + ", email=" + email + "]";
+				+ ", profilePicture=" + profilePicture + ", email=" + email + ", password=" + password+" ]";
 	}
 	
 	
